@@ -1,0 +1,95 @@
+@model IEnumerable<CoWorkManager.Models.Booking>
+@{
+    ViewData["Title"] = "User Dashboard";
+}
+
+@section HeaderStats {
+    <div class="col-md-6">
+        <partial name="_StatCard" model='new { Title = "My Total Bookings", Value = ViewBag.TotalBookings }' />
+    </div>
+    <div class="col-md-6">
+        <partial name="_StatCard" model='new { Title = "Available Spaces", Value = ViewBag.TotalWorkspaces }' />
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-8 mb-4">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Recent Activity</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Workspace</th>
+                                <th>Start Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any())
+                            {
+                                foreach (var booking in Model.Take(5))
+                                {
+                                    <tr>
+                                        <td><strong>@booking.Workspace?.Name</strong></td>
+                                        <td>@booking.StartTime.ToString("MMM dd, hh:mm tt")</td>
+                                        <td>
+                                            <span class="badge status-@booking.BookingStatus?.ToLower()">
+                                                @booking.BookingStatus
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr><td colspan="3" class="text-center text-muted">No recent bookings found.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-3">
+                    <a asp-action="MyBookings" class="btn btn-sm btn-main">View All Bookings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // 1. Chart.js Logic
+        const chartLabels = @Html.Raw(Json.Serialize(ViewBag.ChartLabels));
+        const chartDataValues = @Html.Raw(Json.Serialize(ViewBag.ChartData));
+
+        const ctx = document.getElementById('utilizationChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: chartLabels,
+                datasets: [{
+                    data: chartDataValues,
+                    backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b'],
+                    borderWidth: 1,
+                    hoverOffset: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { padding: 20, usePointStyle: true }
+                    }
+                }
+            }
+        });
+
+    
+    </script>
+}

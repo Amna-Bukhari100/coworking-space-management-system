@@ -1,0 +1,50 @@
+@model IEnumerable<CoWorkManager.Models.Workspace>
+@{
+    ViewData["Title"] = "Manage Workspaces";
+}
+
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Workspace Management</h2>
+        <a asp-action="AddWorkspace" class="btn btn-main">Add New Workspace</a>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Price/Hr</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.Type</td>
+                                <td>$@item.PricePerHour</td>
+                                <td>
+                                    @* PARTIAL VIEW USED HERE *@
+                                    <partial name="_WorkspaceStatus" model="item" />
+                                </td>
+                                <td>
+                                    <form asp-action="ToggleWorkspaceStatus" method="post" style="display:inline;">
+                                        <input type="hidden" name="id" value="@item.WorkspaceId" />
+                                        <button type="submit" class="btn btn-sm btn-outline-secondary">Toggle Status</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

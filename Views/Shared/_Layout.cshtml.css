@@ -1,0 +1,48 @@
+﻿
+a.navbar-brand {
+  white-space: nowrap;
+  /* text-align: center;
+  word-break: break-all; */
+}
+
+a {
+  color: #cf6d2b;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #cf6d2b;
+  border-color: #cf6d2b;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: white;
+  background-color: #cf6d2b;
+  border-color: #cf6d2b;
+}
+
+.border-top {
+  border-top: 1px solid white;
+}
+.border-bottom {
+  border-bottom: 1px solid white;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(15, 15, 15, 0);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  white-space: nowrap;
+  line-height: 60px;
+  flex-shrink: 0; 
+    width: 100%;
+}
+
+
+

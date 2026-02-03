@@ -1,0 +1,66 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<CoWorkManager.Models.ApplicationUser> SignInManager
+@inject UserManager<CoWorkManager.Models.ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section id="hero" class="d-flex align-items-center justify-content-between py-5">
+    <div class="hero-left w-50">
+        <h1 class="display-4 fw-semibold brand-soft">The Synapse</h1>
+        <p class="mb-4 tagline lead">Connecting Dots, Effortlessly.</p>
+        <p class="mb-4">The Synapse is a smart coworking management platform that connects teams and simplifies workspace bookings through real-time data tracking.</p>
+
+        @if (!SignInManager.IsSignedIn(User))
+        {
+            <div class="d-flex gap-2">
+                <a asp-controller="Account" asp-action="Login" class="btn btn-main px-4 text-white">Login</a>
+                <a asp-controller="Account" asp-action="Register" class="btn btn-main px-4 text-white">Get Started</a>
+            </div>
+        }
+        else
+        {
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Admin" asp-action="Dashboard" class="btn btn-main px-4 text-white shadow">Go to Admin Dashboard</a>
+            }
+            else
+            {
+                <a asp-controller="User" asp-action="Dashboard" class="btn btn-main px-4 text-white shadow">Go to My Dashboard</a>
+            }
+        }
+    </div>
+    <div class="hero-right text-end">
+        <img src="~/images/cowork.png" alt="Co-working space" class="img-fluid rounded shadow-lg" style="max-height: 400px;" />
+    </div>
+</section>
+
+<section id="features" class="py-5 bg-light rounded">
+    <div class="container">
+        <h2 class="text-center mb-5">What We Offer</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature card h-100 p-4 border-0 shadow-sm text-center">
+                    <div class="mb-3"><i class="bi bi-calendar-check fs-1 text-primary"></i></div>
+                    <h3>Smart Bookings</h3>
+                    <p>Reserve workspaces instantly and manage your schedule effortlessly with our real-time availability engine.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature card h-100 p-4 border-0 shadow-sm text-center">
+                    <div class="mb-3"><i class="bi bi-people fs-1 text-primary"></i></div>
+                    <h3>Member Management</h3>
+                    <p >Handle memberships, roles, and workspace access seamlessly using our secure identity system.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature card h-100 p-4 border-0 shadow-sm text-center">
+                    <div class="mb-3"><i class="bi bi-shield-check fs-1 text-primary"></i></div>
+                    <h3>Visitor Tracking</h3>
+                    <p>Maintain secure, digital visitor logs for safety and transparency across all your workspace locations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

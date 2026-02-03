@@ -1,0 +1,1098 @@
+2025-12-17 20:59:49.269 +05:00 [INF] User profile is available. Using 'C:\Users\Archetive\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-17 20:59:52.731 +05:00 [INF] Executed DbCommand (219ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 20:59:52.971 +05:00 [INF] Executed DbCommand (24ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 20:59:53.188 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 20:59:53.440 +05:00 [INF] Executed DbCommand (135ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 20:59:53.467 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 20:59:53.478 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 20:59:53.511 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 20:59:53.602 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 20:59:53.922 +05:00 [INF] Now listening on: http://localhost:5181
+2025-12-17 20:59:53.945 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-17 20:59:53.948 +05:00 [INF] Hosting environment: Development
+2025-12-17 20:59:53.949 +05:00 [INF] Content root path: C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main
+2025-12-17 21:00:00.675 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 21:00:00.691 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-17 21:00:00.803 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:00:00.832 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 21:00:00.883 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 21:00:00.988 +05:00 [INF] Executed ViewResult - view Index executed in 132.5073ms.
+2025-12-17 21:00:00.996 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 159.4287ms
+2025-12-17 21:00:01.008 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/css/site.css - null null
+2025-12-17 21:00:01.010 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/images/logo.png - null null
+2025-12-17 21:00:01.011 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/images/cowork.png - null null
+2025-12-17 21:00:01.034 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:00:01.052 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 381.87ms
+2025-12-17 21:00:01.083 +05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\wwwroot\css\site.css'
+2025-12-17 21:00:01.086 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/css/site.css - 200 1827 text/css 78.4408ms
+2025-12-17 21:00:01.091 +05:00 [INF] Sending file. Request path: '/images/logo.png'. Physical path: 'C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\wwwroot\images\logo.png'
+2025-12-17 21:00:01.107 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/images/logo.png - 200 170348 image/png 96.8178ms
+2025-12-17 21:00:01.126 +05:00 [INF] Sending file. Request path: '/images/cowork.png'. Physical path: 'C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\wwwroot\images\cowork.png'
+2025-12-17 21:00:01.141 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/images/cowork.png - 200 1461308 image/png 129.7892ms
+2025-12-17 21:00:01.257 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/favicon.ico - null null
+2025-12-17 21:00:01.307 +05:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\wwwroot\favicon.ico'
+2025-12-17 21:00:01.316 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/favicon.ico - 200 5430 image/x-icon 58.4879ms
+2025-12-17 21:00:05.791 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Account/Login - null null
+2025-12-17 21:00:05.800 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:00:05.814 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:00:05.844 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:00:05.939 +05:00 [INF] Executed ViewResult - view Login executed in 96.5577ms.
+2025-12-17 21:00:05.944 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 120.1636ms
+2025-12-17 21:00:05.947 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:00:05.964 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-12-17 21:00:05.965 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-12-17 21:00:05.979 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 188.4363ms
+2025-12-17 21:00:06.153 +05:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2025-12-17 21:00:06.157 +05:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2025-12-17 21:00:06.189 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 200 5824 text/javascript 225.4626ms
+2025-12-17 21:00:06.192 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/lib/jquery-validation/dist/jquery.validate.min.js - 200 24601 text/javascript 226.7408ms
+2025-12-17 21:00:18.503 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Login - application/x-www-form-urlencoded 250
+2025-12-17 21:00:18.517 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:00:18.529 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CoWorkManager.Models.ViewModels.LoginViewModel, System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:00:18.673 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:00:18.684 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:00:18.693 +05:00 [INF] Executed ViewResult - view Login executed in 8.738ms.
+2025-12-17 21:00:18.699 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 165.8245ms
+2025-12-17 21:00:18.707 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:00:18.722 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 218.5191ms
+2025-12-17 21:00:26.865 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Account/Register - null null
+2025-12-17 21:00:26.869 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Register (CoWorkManager)'
+2025-12-17 21:00:26.884 +05:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:00:26.910 +05:00 [INF] Executing ViewResult, running view Register.
+2025-12-17 21:00:26.952 +05:00 [INF] Executed ViewResult - view Register executed in 42.3759ms.
+2025-12-17 21:00:26.954 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Register (CoWorkManager) in 62.1721ms
+2025-12-17 21:00:26.956 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Register (CoWorkManager)'
+2025-12-17 21:00:26.960 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Account/Register - 200 null text/html; charset=utf-8 95.5176ms
+2025-12-17 21:02:19.216 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Register - application/x-www-form-urlencoded 267
+2025-12-17 21:02:19.224 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Register (CoWorkManager)'
+2025-12-17 21:02:19.244 +05:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(CoWorkManager.Models.ViewModels.RegisterViewModel) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:02:19.439 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:02:19.665 +05:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-12-17 21:02:19.697 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-12-17 21:02:19.743 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-12-17 21:02:19.755 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-12-17 21:02:19.787 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:02:19.883 +05:00 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p17='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p18='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [FullName] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PhoneNumber] = @p12, [PhoneNumberConfirmed] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2025-12-17 21:02:19.934 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 21:02:19.973 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:02:19.998 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p18='?' (Size = 450), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p19='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserClaims] ([ClaimType], [ClaimValue], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p3, [ConcurrencyStamp] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [FullName] = @p7, [LockoutEnabled] = @p8, [LockoutEnd] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-12-17 21:02:20.182 +05:00 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:02:20.194 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p18='?' (Size = 450), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p19='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserClaims] ([ClaimType], [ClaimValue], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p3, [ConcurrencyStamp] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [FullName] = @p7, [LockoutEnabled] = @p8, [LockoutEnd] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2025-12-17 21:02:20.221 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 21:02:20.267 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 21:02:20.274 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:02:20.289 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:02:20.296 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 21:02:20.312 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 21:02:20.322 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:02:20.331 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:02:20.345 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-17 21:02:20.348 +05:00 [INF] Executing RedirectResult, redirecting to /User/Dashboard.
+2025-12-17 21:02:20.352 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Register (CoWorkManager) in 1104.5756ms
+2025-12-17 21:02:20.354 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Register (CoWorkManager)'
+2025-12-17 21:02:20.356 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Register - 302 0 null 1140.3441ms
+2025-12-17 21:02:20.363 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 21:02:20.383 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 21:02:20.387 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 21:02:20.893 +05:00 [INF] User accessed Dashboard.
+2025-12-17 21:02:20.895 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 21:02:20.906 +05:00 [INF] Executed ViewResult - view Dashboard executed in 12.3534ms.
+2025-12-17 21:02:20.908 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 517.5048ms
+2025-12-17 21:02:20.910 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 21:02:20.913 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 549.4449ms
+2025-12-17 21:02:42.682 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Logout - application/x-www-form-urlencoded 225
+2025-12-17 21:02:42.687 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Logout (CoWorkManager)'
+2025-12-17 21:02:42.703 +05:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:02:42.714 +05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-12-17 21:02:42.719 +05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-17 21:02:42.721 +05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-12-17 21:02:42.722 +05:00 [INF] Executing RedirectResult, redirecting to /.
+2025-12-17 21:02:42.724 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Logout (CoWorkManager) in 13.3664ms
+2025-12-17 21:02:42.726 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Logout (CoWorkManager)'
+2025-12-17 21:02:42.728 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Logout - 302 0 null 46.2186ms
+2025-12-17 21:02:42.735 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 21:02:42.738 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:02:42.741 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 21:02:42.747 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 21:02:42.749 +05:00 [INF] Executed ViewResult - view Index executed in 2.8527ms.
+2025-12-17 21:02:42.752 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 6.8329ms
+2025-12-17 21:02:42.754 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:02:42.764 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 28.7139ms
+2025-12-17 21:53:52.746 +05:00 [INF] User profile is available. Using 'C:\Users\Archetive\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-17 21:53:54.764 +05:00 [INF] Executed DbCommand (69ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:53:54.885 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:53:54.896 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:53:55.012 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:53:55.023 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:53:55.032 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:53:55.058 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 21:53:55.114 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 21:53:55.333 +05:00 [INF] Now listening on: http://localhost:5181
+2025-12-17 21:53:55.338 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-17 21:53:55.340 +05:00 [INF] Hosting environment: Development
+2025-12-17 21:53:55.341 +05:00 [INF] Content root path: C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main
+2025-12-17 21:54:09.360 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 21:54:09.381 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-17 21:54:09.485 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:54:09.547 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 21:54:09.615 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 21:54:09.698 +05:00 [INF] Executed ViewResult - view Index executed in 117.91ms.
+2025-12-17 21:54:09.703 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 147.171ms
+2025-12-17 21:54:09.708 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:54:09.734 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 383.5253ms
+2025-12-17 21:54:36.368 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Account/Login - null null
+2025-12-17 21:54:36.381 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:54:36.404 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:54:36.436 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:54:36.510 +05:00 [INF] Executed ViewResult - view Login executed in 74.7637ms.
+2025-12-17 21:54:36.512 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 101.448ms
+2025-12-17 21:54:36.514 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:54:36.521 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 151.3204ms
+2025-12-17 21:54:56.010 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Login - application/x-www-form-urlencoded 252
+2025-12-17 21:54:56.025 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:54:56.041 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CoWorkManager.Models.ViewModels.LoginViewModel, System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:54:56.176 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:54:56.301 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:54:56.308 +05:00 [INF] Executed ViewResult - view Login executed in 7.2944ms.
+2025-12-17 21:54:56.313 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 265.5693ms
+2025-12-17 21:54:56.321 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:54:56.333 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 322.2572ms
+2025-12-17 21:55:13.069 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Login - application/x-www-form-urlencoded 242
+2025-12-17 21:55:13.077 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:55:13.079 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CoWorkManager.Models.ViewModels.LoginViewModel, System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:55:13.117 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:55:13.128 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:55:13.135 +05:00 [INF] Executed ViewResult - view Login executed in 7.6106ms.
+2025-12-17 21:55:13.149 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 67.1544ms
+2025-12-17 21:55:13.151 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:55:13.160 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 90.9519ms
+2025-12-17 21:55:17.526 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Account/Register - null null
+2025-12-17 21:55:17.532 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Register (CoWorkManager)'
+2025-12-17 21:55:17.536 +05:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:55:17.543 +05:00 [INF] Executing ViewResult, running view Register.
+2025-12-17 21:55:17.578 +05:00 [INF] Executed ViewResult - view Register executed in 35.5148ms.
+2025-12-17 21:55:17.583 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Register (CoWorkManager) in 41.544ms
+2025-12-17 21:55:17.609 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Register (CoWorkManager)'
+2025-12-17 21:55:17.638 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Account/Register - 200 null text/html; charset=utf-8 112.04ms
+2025-12-17 21:55:28.361 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Account/Login - null null
+2025-12-17 21:55:28.365 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:55:28.367 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:55:28.373 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:55:28.380 +05:00 [INF] Executed ViewResult - view Login executed in 6.4569ms.
+2025-12-17 21:55:28.383 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 10.6356ms
+2025-12-17 21:55:28.385 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:55:28.387 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 25.9147ms
+2025-12-17 21:55:44.195 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Login - application/x-www-form-urlencoded 240
+2025-12-17 21:55:44.202 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:55:44.207 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CoWorkManager.Models.ViewModels.LoginViewModel, System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:55:44.225 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:55:44.418 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 21:55:44.487 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 21:55:44.499 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:55:44.507 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:55:44.516 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 21:55:44.534 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 21:55:44.542 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:55:44.556 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:55:44.572 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-17 21:55:44.578 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 21:55:44.593 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-12-17 21:55:44.638 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-12-17 21:55:44.645 +05:00 [INF] Executing RedirectResult, redirecting to /User/Dashboard.
+2025-12-17 21:55:44.648 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 430.489ms
+2025-12-17 21:55:44.649 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:55:44.651 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Login - 302 0 null 456.7243ms
+2025-12-17 21:55:44.658 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 21:55:44.673 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 21:55:44.682 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 21:55:44.707 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 21:55:45.130 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 21:55:45.168 +05:00 [INF] Executed ViewResult - view Dashboard executed in 39.0896ms.
+2025-12-17 21:55:45.191 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 505.6943ms
+2025-12-17 21:55:45.201 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 21:55:45.226 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 567.6218ms
+2025-12-17 21:56:10.964 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 21:56:10.976 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 21:56:10.978 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 21:56:10.993 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 21:56:11.010 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 21:56:11.018 +05:00 [INF] Executed ViewResult - view Dashboard executed in 7.8986ms.
+2025-12-17 21:56:11.020 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 38.0689ms
+2025-12-17 21:56:11.023 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 21:56:11.027 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 63.6231ms
+2025-12-17 21:56:14.502 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 21:56:14.515 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 21:56:14.521 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 21:56:14.534 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 21:56:14.549 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 21:56:14.561 +05:00 [INF] Executed ViewResult - view MyBookings executed in 13.2367ms.
+2025-12-17 21:56:14.568 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 41.2031ms
+2025-12-17 21:56:14.574 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 21:56:14.581 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 78.3824ms
+2025-12-17 21:56:21.936 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/CreateBooking - null null
+2025-12-17 21:56:21.944 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 21:56:21.958 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateBooking() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 21:56:21.980 +05:00 [INF] Executing ViewResult, running view CreateBooking.
+2025-12-17 21:56:22.017 +05:00 [INF] Executed ViewResult - view CreateBooking executed in 37.7283ms.
+2025-12-17 21:56:22.019 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 50.0539ms
+2025-12-17 21:56:22.021 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 21:56:22.022 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/CreateBooking - 200 null text/html; charset=utf-8 86.5216ms
+2025-12-17 21:58:17.045 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Logout - application/x-www-form-urlencoded 225
+2025-12-17 21:58:17.056 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Logout (CoWorkManager)'
+2025-12-17 21:58:17.070 +05:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:58:17.084 +05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-12-17 21:58:17.090 +05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-17 21:58:17.096 +05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-12-17 21:58:17.099 +05:00 [INF] Executing RedirectResult, redirecting to /.
+2025-12-17 21:58:17.101 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Logout (CoWorkManager) in 21.4994ms
+2025-12-17 21:58:17.104 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Logout (CoWorkManager)'
+2025-12-17 21:58:17.106 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Logout - 302 0 null 60.5785ms
+2025-12-17 21:58:17.114 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 21:58:17.120 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:58:17.122 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 21:58:17.128 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 21:58:17.132 +05:00 [INF] Executed ViewResult - view Index executed in 4.7076ms.
+2025-12-17 21:58:17.134 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 7.1354ms
+2025-12-17 21:58:17.136 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:58:17.139 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 24.3017ms
+2025-12-17 21:58:19.789 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Account/Login - null null
+2025-12-17 21:58:19.792 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:58:19.794 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:58:19.806 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:58:19.810 +05:00 [INF] Executed ViewResult - view Login executed in 3.9995ms.
+2025-12-17 21:58:19.816 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 14.6301ms
+2025-12-17 21:58:19.829 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:58:19.832 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 43.5378ms
+2025-12-17 21:58:46.134 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Login - application/x-www-form-urlencoded 245
+2025-12-17 21:58:46.140 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:58:46.144 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CoWorkManager.Models.ViewModels.LoginViewModel, System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:58:46.164 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:58:46.391 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 21:58:46.394 +05:00 [INF] Executed ViewResult - view Login executed in 2.7997ms.
+2025-12-17 21:58:46.395 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 248.578ms
+2025-12-17 21:58:46.410 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:58:46.416 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 281.854ms
+2025-12-17 21:59:01.806 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Login - application/x-www-form-urlencoded 245
+2025-12-17 21:59:01.812 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:59:01.814 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CoWorkManager.Models.ViewModels.LoginViewModel, System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 21:59:01.835 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 21:59:01.984 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 21:59:01.995 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 21:59:02.001 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:59:02.011 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:59:02.017 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 21:59:02.021 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 21:59:02.031 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 21:59:02.035 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 21:59:02.039 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-17 21:59:02.048 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 21:59:02.053 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-12-17 21:59:02.062 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-12-17 21:59:02.083 +05:00 [INF] Executing RedirectResult, redirecting to /Admin/Dashboard.
+2025-12-17 21:59:02.084 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 266.5429ms
+2025-12-17 21:59:02.086 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 21:59:02.088 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Login - 302 0 null 282.1ms
+2025-12-17 21:59:02.094 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - null null
+2025-12-17 21:59:02.099 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 21:59:02.101 +05:00 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 21:59:02.119 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 21:59:02.132 +05:00 [INF] Executed ViewResult - view Dashboard executed in 14.8174ms.
+2025-12-17 21:59:02.135 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager) in 31.0894ms
+2025-12-17 21:59:02.137 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 21:59:02.139 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - 200 null text/html; charset=utf-8 44.9426ms
+2025-12-17 21:59:18.286 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - null null
+2025-12-17 21:59:18.294 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 21:59:18.306 +05:00 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 21:59:18.337 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 21:59:18.343 +05:00 [INF] Executed ViewResult - view Dashboard executed in 5.963ms.
+2025-12-17 21:59:18.346 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager) in 28.1131ms
+2025-12-17 21:59:18.354 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 21:59:18.355 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - 200 null text/html; charset=utf-8 69.7578ms
+2025-12-17 21:59:20.764 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Bookings - null null
+2025-12-17 21:59:20.770 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager)'
+2025-12-17 21:59:20.777 +05:00 [INF] Route matched with {action = "Bookings", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Bookings() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 21:59:20.801 +05:00 [INF] Executing ViewResult, running view Bookings.
+2025-12-17 21:59:20.820 +05:00 [INF] Executed ViewResult - view Bookings executed in 19.3276ms.
+2025-12-17 21:59:20.823 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager) in 38.1415ms
+2025-12-17 21:59:20.830 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager)'
+2025-12-17 21:59:20.836 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Bookings - 200 null text/html; charset=utf-8 71.1806ms
+2025-12-17 21:59:29.858 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Visitors - null null
+2025-12-17 21:59:29.864 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Visitors (CoWorkManager)'
+2025-12-17 21:59:29.871 +05:00 [INF] Route matched with {action = "Visitors", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Visitors() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 21:59:29.886 +05:00 [INF] Executing ViewResult, running view Visitors.
+2025-12-17 21:59:29.897 +05:00 [INF] Executed ViewResult - view Visitors executed in 12.2388ms.
+2025-12-17 21:59:29.900 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Visitors (CoWorkManager) in 18.5513ms
+2025-12-17 21:59:29.902 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Visitors (CoWorkManager)'
+2025-12-17 21:59:29.904 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Visitors - 200 null text/html; charset=utf-8 45.8257ms
+2025-12-17 21:59:38.180 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Bookings - null null
+2025-12-17 21:59:38.186 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager)'
+2025-12-17 21:59:38.188 +05:00 [INF] Route matched with {action = "Bookings", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Bookings() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 21:59:38.211 +05:00 [INF] Executing ViewResult, running view Bookings.
+2025-12-17 21:59:38.214 +05:00 [INF] Executed ViewResult - view Bookings executed in 3.0057ms.
+2025-12-17 21:59:38.218 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager) in 25.5458ms
+2025-12-17 21:59:38.221 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager)'
+2025-12-17 21:59:38.229 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Bookings - 200 null text/html; charset=utf-8 48.9628ms
+2025-12-17 21:59:39.460 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - null null
+2025-12-17 21:59:39.464 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 21:59:39.469 +05:00 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 21:59:39.499 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 21:59:39.502 +05:00 [INF] Executed ViewResult - view Dashboard executed in 2.3622ms.
+2025-12-17 21:59:39.503 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager) in 20.7896ms
+2025-12-17 21:59:39.512 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 21:59:39.515 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - 200 null text/html; charset=utf-8 54.8546ms
+2025-12-17 21:59:50.330 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 21:59:50.336 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:59:50.338 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 21:59:50.342 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 21:59:50.351 +05:00 [INF] Executed ViewResult - view Index executed in 9.3753ms.
+2025-12-17 21:59:50.356 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 14.7912ms
+2025-12-17 21:59:50.366 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 21:59:50.373 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 42.8465ms
+2025-12-17 22:00:19.849 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Bookings - null null
+2025-12-17 22:00:19.855 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager)'
+2025-12-17 22:00:19.859 +05:00 [INF] Route matched with {action = "Bookings", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Bookings() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 22:00:19.900 +05:00 [INF] Executing ViewResult, running view Bookings.
+2025-12-17 22:00:19.905 +05:00 [INF] Executed ViewResult - view Bookings executed in 5.1495ms.
+2025-12-17 22:00:19.906 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager) in 34.1227ms
+2025-12-17 22:00:19.908 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Bookings (CoWorkManager)'
+2025-12-17 22:00:19.910 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Bookings - 200 null text/html; charset=utf-8 61.7323ms
+2025-12-17 22:13:55.706 +05:00 [INF] User profile is available. Using 'C:\Users\Archetive\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-17 22:13:57.324 +05:00 [INF] Executed DbCommand (48ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:13:57.500 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:13:57.505 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:13:57.570 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:13:57.660 +05:00 [INF] Executed DbCommand (76ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:13:57.721 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:13:57.765 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 22:13:57.827 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 22:13:58.037 +05:00 [INF] Now listening on: http://localhost:5181
+2025-12-17 22:13:58.041 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-17 22:13:58.044 +05:00 [INF] Hosting environment: Development
+2025-12-17 22:13:58.045 +05:00 [INF] Content root path: C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main
+2025-12-17 22:14:05.739 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 22:14:05.758 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-17 22:14:05.869 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:14:05.903 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 22:14:05.971 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 22:14:06.065 +05:00 [INF] Executed ViewResult - view Index executed in 98.5934ms.
+2025-12-17 22:14:06.074 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 162.4656ms
+2025-12-17 22:14:06.085 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:14:06.102 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 365.8571ms
+2025-12-17 22:14:12.173 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - null null
+2025-12-17 22:14:12.204 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 22:14:12.210 +05:00 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CoWorkManager.Controllers.AdminController (CoWorkManager).
+2025-12-17 22:14:12.354 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:14:12.392 +05:00 [INF] Executed ViewResult - view Dashboard executed in 38.7233ms.
+2025-12-17 22:14:12.396 +05:00 [INF] Executed action CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager) in 175.6336ms
+2025-12-17 22:14:12.401 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AdminController.Dashboard (CoWorkManager)'
+2025-12-17 22:14:12.422 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Admin/Dashboard - 200 null text/html; charset=utf-8 243.0526ms
+2025-12-17 22:14:24.746 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Logout - application/x-www-form-urlencoded 225
+2025-12-17 22:14:24.796 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Logout (CoWorkManager)'
+2025-12-17 22:14:24.813 +05:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 22:14:24.835 +05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-12-17 22:14:24.839 +05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-17 22:14:24.844 +05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-12-17 22:14:24.847 +05:00 [INF] Executing RedirectResult, redirecting to /.
+2025-12-17 22:14:24.849 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Logout (CoWorkManager) in 32.7616ms
+2025-12-17 22:14:24.851 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Logout (CoWorkManager)'
+2025-12-17 22:14:24.853 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Logout - 302 0 null 106.2282ms
+2025-12-17 22:14:24.861 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 22:14:24.866 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:14:24.867 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 22:14:24.870 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 22:14:24.878 +05:00 [INF] Executed ViewResult - view Index executed in 7.8725ms.
+2025-12-17 22:14:24.880 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 10.0273ms
+2025-12-17 22:14:24.885 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:14:24.888 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 26.4331ms
+2025-12-17 22:14:27.181 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/Account/Login - null null
+2025-12-17 22:14:27.187 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 22:14:27.209 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 22:14:27.222 +05:00 [INF] Executing ViewResult, running view Login.
+2025-12-17 22:14:27.273 +05:00 [INF] Executed ViewResult - view Login executed in 53.4471ms.
+2025-12-17 22:14:27.276 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 63.2084ms
+2025-12-17 22:14:27.279 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 22:14:27.291 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/Account/Login - 200 null text/html; charset=utf-8 110.0731ms
+2025-12-17 22:14:40.580 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/Account/Login - application/x-www-form-urlencoded 240
+2025-12-17 22:14:40.587 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 22:14:40.609 +05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CoWorkManager.Models.ViewModels.LoginViewModel, System.String) on controller CoWorkManager.Controllers.AccountController (CoWorkManager).
+2025-12-17 22:14:40.741 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-12-17 22:14:40.918 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 22:14:40.994 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 22:14:41.002 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:14:41.008 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:14:41.019 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-12-17 22:14:41.024 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-12-17 22:14:41.029 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:14:41.035 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:14:41.041 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-17 22:14:41.050 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 22:14:41.069 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-12-17 22:14:41.123 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-12-17 22:14:41.132 +05:00 [INF] Executing RedirectResult, redirecting to /User/Dashboard.
+2025-12-17 22:14:41.136 +05:00 [INF] Executed action CoWorkManager.Controllers.AccountController.Login (CoWorkManager) in 519.3098ms
+2025-12-17 22:14:41.138 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.AccountController.Login (CoWorkManager)'
+2025-12-17 22:14:41.149 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/Account/Login - 302 0 null 568.7178ms
+2025-12-17 22:14:41.154 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 22:14:41.164 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:14:41.172 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:14:41.218 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:14:41.245 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:14:41.258 +05:00 [INF] Executed ViewResult - view Dashboard executed in 13.4186ms.
+2025-12-17 22:14:41.263 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 87.3133ms
+2025-12-17 22:14:41.266 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:14:41.268 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 114.5159ms
+2025-12-17 22:14:47.816 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:14:47.823 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:14:47.838 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:14:47.853 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:14:47.867 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:14:47.877 +05:00 [INF] Executed ViewResult - view MyBookings executed in 13.0965ms.
+2025-12-17 22:14:47.879 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 37.6892ms
+2025-12-17 22:14:47.888 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:14:47.896 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 80.3375ms
+2025-12-17 22:14:50.668 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/CreateBooking - null null
+2025-12-17 22:14:50.674 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:14:50.682 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateBooking() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:14:50.699 +05:00 [INF] Executing ViewResult, running view CreateBooking.
+2025-12-17 22:14:50.738 +05:00 [INF] Executed ViewResult - view CreateBooking executed in 39.7701ms.
+2025-12-17 22:14:50.741 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 55.2302ms
+2025-12-17 22:14:50.746 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:14:50.753 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/CreateBooking - 200 null text/html; charset=utf-8 84.6474ms
+2025-12-17 22:14:53.782 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 22:14:53.787 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:14:53.788 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:14:53.818 +05:00 [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:14:53.841 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:14:53.846 +05:00 [INF] Executed ViewResult - view Dashboard executed in 4.4802ms.
+2025-12-17 22:14:53.847 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 48.3739ms
+2025-12-17 22:14:53.849 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:14:53.853 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 71.534ms
+2025-12-17 22:14:56.125 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:14:56.134 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:14:56.141 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:14:56.157 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:14:56.173 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:14:56.176 +05:00 [INF] Executed ViewResult - view MyBookings executed in 3.5609ms.
+2025-12-17 22:14:56.178 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 33.5539ms
+2025-12-17 22:14:56.180 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:14:56.213 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 87.7059ms
+2025-12-17 22:14:58.096 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/CreateBooking - null null
+2025-12-17 22:14:58.101 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:14:58.103 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateBooking() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:14:58.120 +05:00 [INF] Executing ViewResult, running view CreateBooking.
+2025-12-17 22:14:58.126 +05:00 [INF] Executed ViewResult - view CreateBooking executed in 6.0266ms.
+2025-12-17 22:14:58.130 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 13.9398ms
+2025-12-17 22:14:58.186 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:14:58.188 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/CreateBooking - 200 null text/html; charset=utf-8 91.9318ms
+2025-12-17 22:15:17.926 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/User/CreateBooking - application/x-www-form-urlencoded 361
+2025-12-17 22:15:17.933 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:15:17.954 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBooking(CoWorkManager.Models.Booking) on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:15:17.983 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:15:18.081 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 118.6219ms
+2025-12-17 22:15:18.084 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:15:18.087 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Bookings_Visitors_VisitorId". The conflict occurred in database "CoWorkManager", table "dbo.Visitors", column 'VisitorId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String methodName)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 556
+   at CoWorkManager.Models.Repositories.BookingRepository.Add(Booking booking) in C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\Models\Repositories\BookingRepository.cs:line 75
+   at CoWorkManager.Controllers.UserController.CreateBooking(Booking booking) in C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main\Controllers\UserController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:368431cf-73f8-4578-88f3-d2cc0d9beec0
+Error Number:547,State:0,Class:16
+2025-12-17 22:15:18.318 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/User/CreateBooking - 500 null text/html; charset=utf-8 392.321ms
+2025-12-17 22:22:05.226 +05:00 [INF] User profile is available. Using 'C:\Users\Archetive\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-17 22:22:07.825 +05:00 [INF] Executed DbCommand (82ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:22:08.008 +05:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:22:08.233 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:22:08.310 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:22:08.329 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:22:08.341 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:22:08.374 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 22:22:08.458 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 22:22:08.702 +05:00 [INF] Now listening on: http://localhost:5181
+2025-12-17 22:22:08.709 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-17 22:22:08.712 +05:00 [INF] Hosting environment: Development
+2025-12-17 22:22:08.713 +05:00 [INF] Content root path: C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main
+2025-12-17 22:22:20.388 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 22:22:20.403 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-17 22:22:20.499 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:22:20.572 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 22:22:20.630 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 22:22:20.745 +05:00 [INF] Executed ViewResult - view Index executed in 117.2815ms.
+2025-12-17 22:22:20.766 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 187.9616ms
+2025-12-17 22:22:20.788 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:22:20.803 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 418.7884ms
+2025-12-17 22:22:27.070 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:22:27.094 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:22:27.112 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:22:27.232 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:22:27.292 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:22:27.305 +05:00 [INF] Executed ViewResult - view MyBookings executed in 14.1204ms.
+2025-12-17 22:22:27.309 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 192.2687ms
+2025-12-17 22:22:27.314 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:22:27.331 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 261.0357ms
+2025-12-17 22:22:28.994 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/CreateBooking - null null
+2025-12-17 22:22:29.041 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:22:29.048 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateBooking() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:22:29.095 +05:00 [INF] Executing ViewResult, running view CreateBooking.
+2025-12-17 22:22:29.173 +05:00 [INF] Executed ViewResult - view CreateBooking executed in 78.2764ms.
+2025-12-17 22:22:29.176 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 122.6666ms
+2025-12-17 22:22:29.185 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:22:29.192 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/CreateBooking - 200 null text/html; charset=utf-8 198.1609ms
+2025-12-17 22:22:53.005 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/User/CreateBooking - application/x-www-form-urlencoded 361
+2025-12-17 22:22:53.013 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:22:53.048 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBooking(CoWorkManager.Models.Booking) on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:22:53.123 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:22:53.174 +05:00 [INF] Executing RedirectResult, redirecting to /User/MyBookings.
+2025-12-17 22:22:53.176 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 119.2999ms
+2025-12-17 22:22:53.178 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:22:53.179 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/User/CreateBooking - 302 0 null 174.2671ms
+2025-12-17 22:22:53.187 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:22:53.192 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:22:53.193 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:22:53.198 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:22:53.215 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:22:53.222 +05:00 [INF] Executed ViewResult - view MyBookings executed in 6.7925ms.
+2025-12-17 22:22:53.224 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 27.6573ms
+2025-12-17 22:22:53.228 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:22:53.232 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 44.6095ms
+2025-12-17 22:25:38.960 +05:00 [INF] User profile is available. Using 'C:\Users\Archetive\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-17 22:25:40.792 +05:00 [INF] Executed DbCommand (70ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:25:41.043 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:25:41.053 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:25:41.143 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:25:41.155 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-12-17 22:25:41.162 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-12-17 22:25:41.199 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 22:25:41.276 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-12-17 22:25:41.458 +05:00 [INF] Now listening on: http://localhost:5181
+2025-12-17 22:25:41.463 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-17 22:25:41.465 +05:00 [INF] Hosting environment: Development
+2025-12-17 22:25:41.468 +05:00 [INF] Content root path: C:\Users\Archetive\Downloads\semester-project-40-backend-bsef23m531-Amna-main\semester-project-40-backend-bsef23m531-Amna-main
+2025-12-17 22:25:47.734 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/ - null null
+2025-12-17 22:25:47.750 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-17 22:25:47.938 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:25:47.965 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CoWorkManager.Controllers.HomeController (CoWorkManager).
+2025-12-17 22:25:48.215 +05:00 [INF] Executing ViewResult, running view Index.
+2025-12-17 22:25:48.330 +05:00 [INF] Executed ViewResult - view Index executed in 117.5712ms.
+2025-12-17 22:25:48.337 +05:00 [INF] Executed action CoWorkManager.Controllers.HomeController.Index (CoWorkManager) in 368.2349ms
+2025-12-17 22:25:48.343 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.HomeController.Index (CoWorkManager)'
+2025-12-17 22:25:48.377 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/ - 200 null text/html; charset=utf-8 646.1716ms
+2025-12-17 22:25:51.827 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 22:25:51.846 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:25:51.859 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:25:51.995 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:25:52.132 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:25:52.172 +05:00 [INF] Executed ViewResult - view Dashboard executed in 41.2528ms.
+2025-12-17 22:25:52.176 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 310.6266ms
+2025-12-17 22:25:52.184 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:25:52.202 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 375.4839ms
+2025-12-17 22:27:10.151 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:27:10.184 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:27:10.196 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:27:10.230 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:27:10.243 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:27:10.253 +05:00 [INF] Executed ViewResult - view MyBookings executed in 10.6976ms.
+2025-12-17 22:27:10.255 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 52.8791ms
+2025-12-17 22:27:10.260 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:27:10.263 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 112.7033ms
+2025-12-17 22:27:13.242 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 22:27:13.252 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:27:13.254 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:27:13.270 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:27:13.288 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:27:13.293 +05:00 [INF] Executed ViewResult - view Dashboard executed in 5.6885ms.
+2025-12-17 22:27:13.296 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 36.9917ms
+2025-12-17 22:27:13.311 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:27:13.313 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 70.9059ms
+2025-12-17 22:27:16.477 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:27:16.481 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:27:16.483 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:27:16.498 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:27:16.511 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:27:16.516 +05:00 [INF] Executed ViewResult - view MyBookings executed in 5.2578ms.
+2025-12-17 22:27:16.518 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 30.9482ms
+2025-12-17 22:27:16.520 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:27:16.535 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 46.8169ms
+2025-12-17 22:27:23.044 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 22:27:23.051 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:27:23.054 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:27:23.072 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:27:23.090 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:27:23.092 +05:00 [INF] Executed ViewResult - view Dashboard executed in 2.8504ms.
+2025-12-17 22:27:23.096 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 38.1679ms
+2025-12-17 22:27:23.105 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:27:23.118 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 74.7501ms
+2025-12-17 22:27:35.416 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:27:35.421 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:27:35.423 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:27:35.438 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:27:35.451 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:27:35.459 +05:00 [INF] Executed ViewResult - view MyBookings executed in 8.1358ms.
+2025-12-17 22:27:35.462 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 29.9881ms
+2025-12-17 22:27:35.465 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:27:35.469 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 52.4477ms
+2025-12-17 22:27:39.120 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/CreateBooking - null null
+2025-12-17 22:27:39.125 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:27:39.139 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateBooking() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:27:39.156 +05:00 [INF] Executing ViewResult, running view CreateBooking.
+2025-12-17 22:27:39.210 +05:00 [INF] Executed ViewResult - view CreateBooking executed in 54.7301ms.
+2025-12-17 22:27:39.211 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 66.1076ms
+2025-12-17 22:27:39.214 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:27:39.220 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/CreateBooking - 200 null text/html; charset=utf-8 99.1273ms
+2025-12-17 22:28:03.073 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5181/User/CreateBooking - application/x-www-form-urlencoded 361
+2025-12-17 22:28:03.080 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:28:03.129 +05:00 [INF] Route matched with {action = "CreateBooking", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBooking(CoWorkManager.Models.Booking) on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:28:03.198 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:28:03.252 +05:00 [INF] Executing RedirectResult, redirecting to /User/MyBookings.
+2025-12-17 22:28:03.257 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager) in 124.063ms
+2025-12-17 22:28:03.259 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.CreateBooking (CoWorkManager)'
+2025-12-17 22:28:03.260 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5181/User/CreateBooking - 302 0 null 187.2853ms
+2025-12-17 22:28:03.267 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:28:03.271 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:28:03.273 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:28:03.279 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:28:03.289 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:28:03.292 +05:00 [INF] Executed ViewResult - view MyBookings executed in 3.0079ms.
+2025-12-17 22:28:03.293 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 18.3641ms
+2025-12-17 22:28:03.295 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:28:03.298 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 31.3203ms
+2025-12-17 22:28:08.397 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 22:28:08.402 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:28:08.404 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:28:08.422 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:28:08.441 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:28:08.449 +05:00 [INF] Executed ViewResult - view Dashboard executed in 7.6244ms.
+2025-12-17 22:28:08.451 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 32.7937ms
+2025-12-17 22:28:08.453 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:28:08.457 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 59.4046ms
+2025-12-17 22:28:10.576 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/MyBookings - null null
+2025-12-17 22:28:10.584 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:28:10.594 +05:00 [INF] Route matched with {action = "MyBookings", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MyBookings() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:28:10.610 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:28:10.628 +05:00 [INF] Executing ViewResult, running view MyBookings.
+2025-12-17 22:28:10.631 +05:00 [INF] Executed ViewResult - view MyBookings executed in 3.7022ms.
+2025-12-17 22:28:10.634 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager) in 36.1325ms
+2025-12-17 22:28:10.637 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.MyBookings (CoWorkManager)'
+2025-12-17 22:28:10.666 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/MyBookings - 200 null text/html; charset=utf-8 90.0875ms
+2025-12-17 22:42:16.818 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5181/User/Dashboard - null null
+2025-12-17 22:42:16.837 +05:00 [INF] Executing endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:42:16.839 +05:00 [INF] Route matched with {action = "Dashboard", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller CoWorkManager.Controllers.UserController (CoWorkManager).
+2025-12-17 22:42:16.889 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-12-17 22:42:16.904 +05:00 [INF] Executing ViewResult, running view Dashboard.
+2025-12-17 22:42:16.907 +05:00 [INF] Executed ViewResult - view Dashboard executed in 2.8664ms.
+2025-12-17 22:42:16.909 +05:00 [INF] Executed action CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager) in 62.1044ms
+2025-12-17 22:42:16.911 +05:00 [INF] Executed endpoint 'CoWorkManager.Controllers.UserController.Dashboard (CoWorkManager)'
+2025-12-17 22:42:16.913 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5181/User/Dashboard - 200 null text/html; charset=utf-8 94.4922ms

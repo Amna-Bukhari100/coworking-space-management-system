@@ -1,0 +1,76 @@
+@model IEnumerable<CoWorkManager.Models.Booking>
+@{
+    ViewData["Title"] = "Manage Bookings";
+}
+
+<h2 class="mb-4">Bookings Management</h2>
+
+<div class="card p-3 shadow-sm border-0">
+    <h5>All Booking Requests</h5>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Space</th>
+                    <th>Time Slot</th>
+                    <th>Guests</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <strong>@item.ApplicationUser?.FullName</strong><br/>
+                            <small class="text-muted">@item.ApplicationUser?.Email</small>
+                        </td>
+                        <td>@item.Workspace?.Name (@item.Workspace?.Type)</td>
+                        
+                        @* Date with AM/PM formatting *@
+                        <td>
+                            <span class="text-nowrap">@item.StartTime.ToString("MMM dd, hh:mm tt")</span><br />
+                            <small class="text-muted">to</small><br />
+                            <span class="text-nowrap">@item.EndTime.ToString("MMM dd, hh:mm tt")</span>
+                        </td>
+
+                        <td>
+                            @if (item.Visitors != null && item.Visitors.Any())
+                            {
+                                <span class="badge bg-info text-dark">
+                                    @item.Visitors.Count Guests
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">0 Guests</span>
+                            }
+                        </td>
+
+                        <td>
+                            <span class="badge status-@item.BookingStatus?.ToLower()">
+                                @item.BookingStatus
+                            </span>
+                        </td>
+                        <td>
+                            @if (item.BookingStatus == "Pending")
+                            {
+                                <form asp-action="ApproveBooking" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@item.BookingId" />
+                                    <button type="submit" class="btn btn-sm btn-success">Approve</button>
+                                </form>
+                            }
+                            
+                            <form asp-action="AdminCancelBooking" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@item.BookingId" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Cancel</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

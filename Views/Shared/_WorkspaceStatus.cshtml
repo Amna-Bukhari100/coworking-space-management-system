@@ -1,0 +1,6 @@
+@model CoWorkManager.Models.Workspace
+
+<span class="workspace-status @(Model.IsAvailable ? "status-active" : "status-maintenance")">
+    @(Model.IsAvailable ? "Active" : "Under Maintenance")
+</span>
+

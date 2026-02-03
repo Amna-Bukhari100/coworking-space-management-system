@@ -1,0 +1,41 @@
+@model IEnumerable<CoWorkManager.Models.Visitor>
+@{
+    ViewData["Title"] = "My Visitor Log";
+}
+
+<div class="container">
+    <h2 class="mb-4">Visitor History</h2>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Guest Name</th>
+                            <th>Contact</th>
+                            <th>Booking ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var visitor in Model)
+                            {
+                                <tr>
+                                    <td><strong>@visitor.FullName</strong></td>
+                                    <td>@visitor.Email<br/><small>@visitor.Phone</small></td>
+                                    <td>#@visitor.BookingId</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr><td colspan="3" class="text-center">No visitors found in your history.</td></tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

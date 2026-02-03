@@ -1,0 +1,170 @@
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9e4e4;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#hero .hero-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+#hero .hero-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+#hero .hero-right img {
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+.btn-main {
+    background-color:#cf6d2b ;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-main:hover {
+    background-color: #cf6d2b;
+}
+
+.btn-outline {
+    border: 2px solid #dfcfc5;
+    color: #cf6d2b;
+}
+
+.btn-outline:hover {
+    background-color: #cf6d2b;
+    color: white;
+}
+.btn-outline-secondary:hover {
+    background-color: #e0e0e0; 
+    color: black;
+}
+
+#features {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0);
+    color:white;
+    background-color:#cf6d2b; 
+}
+
+.card-summary {
+    background-color:#cf6d2b; 
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+}
+.card.shadow-sm {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+a{
+    color: #cf6d2b;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+}
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+    background-color: #e0e0e0 !important; 
+    color: black !important; 
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f3f3f3 !important;
+    color: black !important;
+}
+.w-55 {
+    width: 55%;
+}
+/* Workspace Status Badges — override Bootstrap table styles */
+table .workspace-status.status-active {
+    background-color: #cf6d2b !important; /* orange */
+    color: black !important;              /* force black text */
+    border-radius: 0.5rem;
+    padding: 0.35em 0.65em;
+    font-weight: 600;
+    display: inline-block;
+}
+
+table .workspace-status.status-maintenance {
+    background-color: #dc3545 !important; /* red */
+    color: white !important;              /* force white text */
+    border-radius: 0.5rem;
+    padding: 0.35em 0.65em;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Optional hover effect */
+table .workspace-status:hover {
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.brand-soft {
+    color: #222;      /* slightly softer than pure black */
+    letter-spacing: 0.5px;
+}
+.feature h3 {
+    color: white;
+    font-weight: 600;
+}
+
+.feature p {
+    color: #111;
+}
+/* Workspace Status Badges */
+.workspace-status.status-active {
+    background-color: #cf6d2b !important; /* Orange */
+    color: black !important;              /* Black text for readability */
+    border-radius: 0.5rem;
+    padding: 0.35em 0.65em;
+    font-weight: 600;
+    display: inline-block;
+}
+.status-rejected,
+.status-cancelled {
+    background-color:white;
+    color: #dc3545 !important; 
+    /* Bootstrap danger */
+    color: #fff;
+}
+
+
+
+
+

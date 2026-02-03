@@ -1,0 +1,123 @@
+@model IEnumerable<CoWorkManager.Models.Booking>
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Admin Analytics Dashboard</h2>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 p-4">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-4">Platform Overview (Workspaces vs. Bookings vs. Visitors)
+                    </h5>
+                    <div style="height: 300px; position: relative;">
+                        <canvas id="simpleBarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        @* Razor requires @await even if the logic inside is synchronous *@
+        @await Component.InvokeAsync("PendingBookings")
+    </div>
+
+    <div id="bookingsTable" class="card shadow-sm border-0">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">Recent Bookings List</h5>
+                <span class="badge bg-info text-dark">Total: @Model.Count() Bookings</span>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Workspace</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var booking in Model)
+                            {
+                                <tr>
+                                    <td><strong>#@booking.BookingId</strong></td>
+                                    <td>@booking.Workspace?.Name</td>
+                                    <td>@booking.StartTime.ToString("MMM dd, hh:mm tt")</td>
+                                    <td>@booking.EndTime.ToString("MMM dd, hh:mm tt")</td>
+                                    <td>
+                                        <span class="badge status-@booking.BookingStatus?.ToLower()">
+                                            @booking.BookingStatus
+                                        </span>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center py-4 text-muted">No bookings found in the system.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const chartDataValues = @Html.Raw(Json.Serialize(ViewBag.SimpleChartData));
+
+        const ctx = document.getElementById('simpleBarChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Total Workspaces', 'Total Bookings', 'Total Visitors'],
+                datasets: [{
+                    label: 'System Count',
+                    data: chartDataValues,
+                    backgroundColor: [
+                        'rgba(207, 109, 43, 0.8)',  // orange
+                        'rgba(28, 200, 138, 0.8)',  // green
+                        'rgba(246, 194, 62, 0.8)'   // yellow 
+                    ],
+                    borderColor: [
+                        '#cf6d2b', // orange
+                        '#1cc88a',
+                        '#f6c23e'  // yellow
+                    ],
+                    borderWidth: 1,
+                    borderRadius: 8,
+                    barPercentage: 0.5,       // thinner bars
+                    categoryPercentage: 0.5
+                }]
+
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { stepSize: 1 } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+    
+    </script>
+}

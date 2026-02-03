@@ -1,0 +1,42 @@
+@model CoWorkManager.Models.Booking
+@{
+    ViewData["Title"] = "Request Workspace";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card p-4 shadow-sm border-0">
+            <h3 class="text-center mb-4">Book a Workspace</h3>
+
+            <form asp-action="CreateBooking" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="mb-3">
+                    <label class="form-label">Select Workspace</label>
+                    <select asp-for="WorkspaceId" class="form-select" required>
+                        <option value="">-- Choose Space --</option>
+                        @foreach (var space in (IEnumerable<CoWorkManager.Models.Workspace>)ViewBag.Workspaces)
+                        {
+                            <option value="@space.WorkspaceId">@space.Name (@space.Type) - $@space.PricePerHour/hr</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Start Time</label>
+                        <input asp-for="StartTime" type="datetime-local" class="form-control" required />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">End Time</label>
+                        <input asp-for="EndTime" type="datetime-local" class="form-control" required />
+                    </div>
+                </div>
+
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn btn-main">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

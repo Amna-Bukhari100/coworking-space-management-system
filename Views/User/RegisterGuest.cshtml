@@ -1,0 +1,107 @@
+@model CoWorkManager.Models.Visitor
+@{
+    ViewData["Title"] = "Register Guest";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="mb-3">Register Guest for @ViewBag.WorkspaceName</h4>
+                    
+                    <form id="guestAjaxForm">
+                        <input type="hidden" asp-for="BookingId" id="bookingIdField" />
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input asp-for="FullName" class="form-control" id="fullNameField" required />
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input asp-for="Email" class="form-control" id="emailField" type="email" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input asp-for="Phone" class="form-control" id="phoneField" 
+                                   type="tel" maxlength="11" placeholder="e.g. 03003456781" required />
+                        </div>
+
+                        <button type="submit" class="btn btn-main w-100">Add Guest</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <h5>Registered Guests</h5>
+            <table class="table table-hover bg-white shadow-sm" id="guestTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="guestTableBody">
+                    @if (ViewBag.GuestList != null)
+                    {
+                        foreach (var guest in ViewBag.GuestList)
+                        {
+                            <tr>
+                                <td>@guest.FullName</td>
+                                <td>@guest.Email</td>
+                                <td>@guest.Phone</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#guestAjaxForm').on('submit', function (e) {
+                e.preventDefault(); 
+
+                var guestData = {
+                    FullName: $('#fullNameField').val(),
+                    Email: $('#emailField').val(),
+                    Phone: $('#phoneField').val(),
+                    BookingId: parseInt($('#bookingIdField').val())
+                };
+
+                $.ajax({
+                    url: '/User/RegisterGuestAjax',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(guestData),
+                    success: function (response) {
+                        if (response.success) {
+                            var newRow = '<tr><td>' + response.fullName + '</td><td>' + 
+                                         response.email + '</td><td>' + response.phone + '</td></tr>';
+                            $('#guestTableBody').append(newRow);
+
+                            $('#fullNameField').val('');
+                            $('#emailField').val('');
+                            $('#phoneField').val('');
+
+                            alert("Guest added via AJAX successfully!");
+                        } else {
+                            // This now shows the "must be exactly 11 digits" error from the server
+                            alert("Validation Error: " + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert("Error connecting to server.");
+                    }
+                });
+            });
+        });
+    </script>
+}
